@@ -28,7 +28,7 @@ function [F, G] = diophantine(A, B, T)
     order_of_B = length(B)-1;
     order_of_F = order_of_B - 1;
     order_of_G = order_of_A - 1;
-    T_extended = zeros(1, order_of_F + order_of_G + 2);
+    T_extended = zeros(1, order_of_F + order_of_G + 2); % T=[x,x,x] --> T=[x,x,x,0,0,0...]
     T_extended(1:length(T)) = T;
         F = sym('f',[1 order_of_F+1]);
         G = sym('g',[1 order_of_G+1]);
