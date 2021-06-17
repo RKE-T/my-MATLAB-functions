@@ -2,7 +2,7 @@ function [F, G] = diophantine(A, B, T)
 
 % solve diophantine equation in form below:
 % T = A x F + B x G;
-% usage: [F, G]=diophantine(A, B, T);
+% use as: [F, G]=diophantine(A, B, T);
 % input polynomial coefficient in descending order.
 % example: A = z^-1 + 2z^-2; 
 % so A is [0, 1, 2];
